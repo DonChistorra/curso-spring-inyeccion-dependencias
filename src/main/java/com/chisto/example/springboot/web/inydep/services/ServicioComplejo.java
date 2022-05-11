@@ -2,14 +2,11 @@ package com.chisto.example.springboot.web.inydep.services;
 
 import org.springframework.stereotype.Service;
 
-@Service
-public class ServicioPrueba {
+@Service("servicioComplejo")
+public class ServicioComplejo implements IServicio{
 
-	public String pruebaSencilla() {
-		return "Realizando alguna operación sencilla...";
-	}
-	
-	public String pruebaComleja() {
+	@Override
+	public String ejecutarPrueba() {
 		return "Realizando alguna operación compleja...";
 	}
 	
