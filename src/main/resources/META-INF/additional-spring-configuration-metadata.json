@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "controllers.index.titulo",
+    "type": "java.lang.String",
+    "description": "A description for 'controllers.index.titulo'"
+  },
+  {
+    "name": "controllers.index.mensaje-bienvenida",
+    "type": "java.lang.String",
+    "description": "A description for 'controllers.index.mensaje-bienvenida'"
+  }
+]}
