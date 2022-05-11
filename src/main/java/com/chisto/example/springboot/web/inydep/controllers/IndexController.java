@@ -22,10 +22,12 @@ public class IndexController {
 	private String titulo;
 	@Value("${controllers.index.mensaje-bienvenida}")
 	private String mensaje_bienvenida;
-
-	@Autowired
-	@Qualifier("servicioComplejo")
+	
 	private IServicio servicio;
+	
+	public IndexController(@Qualifier("servicioSencillo")IServicio servicio) {
+		this.servicio = servicio;
+	}
 	
 	@GetMapping({"", "/", "/index"})
 	public String index(Model model) {
