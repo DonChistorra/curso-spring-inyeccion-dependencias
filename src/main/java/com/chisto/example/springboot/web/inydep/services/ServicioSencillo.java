@@ -1,8 +1,6 @@
 package com.chisto.example.springboot.web.inydep.services;
 
-import org.springframework.stereotype.Service;
-
-@Service("servicioSencillo")
+//@Service("servicioSencillo")
 public class ServicioSencillo implements IServicio{
 
 	@Override
